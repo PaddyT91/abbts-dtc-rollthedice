@@ -12,13 +12,15 @@ fun main() {
 
     val aDie = Random
 
-    val playerScore = aDie.nextInt(7)
-    val computerScore = aDie.nextInt(7)
-
+    val playerScore = aDie.nextInt(1,7)
+    val computerScore = aDie.nextInt(1,7)
     // Todo: Den Fehler im Programm finden und beheben
     // Todo: Den Spieler nach dem Namen fragen
     // Todo: Solange spielen bis Spieler abbricht
     // Todo: Ausgeben, wer mehr Runden gewonnen hat
+    println(" Spielername hinzufügen: ")
+    var spielerName:String = readln()
+
 
     println("Du würfelst: $playerScore  --  Computer würfelt: $computerScore")
     when {
